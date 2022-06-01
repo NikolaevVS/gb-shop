@@ -1,10 +1,21 @@
  $w100: 100%;
  $lightpink: #F8F3F4;
  $pink: #F16D7F;
+ $brightpink: #EF5B70;
+ $grey: #636363;
+ $lightgrey: #C4C4C4;
+ $lightgrey-border: #EBEBEB;
+ $grey-filter: #6F6E6E;
+ $white: #fff;
+ $black: #000;
  body {
      margin: 0;
      font-family: Lato;
-     background-color: #fff;
+     background-color: $white;
+ }
+ 
+ ul {
+     padding-inline-start: 0px;
  }
  
  .container {
@@ -320,15 +331,23 @@
  }
  
  .banner-wrp {
+     display: -webkit-box;
+     display: -ms-flexbox;
      display: flex;
+     -webkit-box-align: center;
+     -ms-flex-align: center;
      align-items: center;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
      justify-content: flex-end;
      min-height: inherit;
-     background-image: url('/assets/img/content/men.png');
+     background-image: url("img/men.png");
      background-repeat: no-repeat;
      background-size: contain;
      background-position: bottom left -225px;
  }
+ 
+ .banner-image {}
  
  .banner-title {
      display: block;
@@ -920,39 +939,12 @@
      background-color: $lightpink;
      margin: 0 0 51px 0;
      min-height: 148px;
- }
- 
- .banner-small-height:nth-child(1) {
-     -webkit-order: 0;
-     -ms-flex-order: 0;
-     order: 0;
-     -webkit-flex: 0 1 auto;
-     -ms-flex: 0 1 auto;
-     flex: 0 1 auto;
-     -webkit-align-self: auto;
-     -ms-flex-item-align: auto;
-     align-self: auto;
- }
- 
- .banner-small-height:nth-child(2) {
-     -webkit-order: 0;
-     -ms-flex-order: 0;
-     order: 0;
-     -webkit-flex: 0 1 auto;
-     -ms-flex: 0 1 auto;
-     flex: 0 1 auto;
-     -webkit-align-self: auto;
-     -ms-flex-item-align: auto;
-     align-self: auto;
- }
- 
- .banner-small-height-wrp {
      align-items: center;
+     justify-content: space-around;
  }
  
  .banner-small-height-item {
      text-decoration: none;
-     width: $w100;
      font-style: normal;
      font-weight: 400;
      font-size: 24px;
@@ -962,17 +954,135 @@
      text-transform: uppercase;
  }
  
- .banner-small-categories-list {
-     width: $w100;
+ .banner-small-categories-list {}
+ /* Style the list */
+ 
+ ul.breadcrumb {
+     text-decoration: none;
+     padding: 10px 16px;
+     list-style: none;
+     text-transform: uppercase;
+ }
+ /* Display list items side by side */
+ 
+ ul.breadcrumb li {
+     display: inline;
+     font-size: 18px;
+ }
+ /* Add a slash symbol (/) before/behind each list item */
+ 
+ ul.breadcrumb li+li:before {
+     padding: 8px;
+     color: black;
+     content: "/\00a0";
+ }
+ /* Add a color to all links inside the list */
+ 
+ ul.breadcrumb li a {
+     text-decoration: none;
+     color: $grey;
+ }
+ /* Add a color on mouse-over */
+ 
+ ul.breadcrumb li a:hover {
+     color: $pink;
  }
  
- .banner-small-categories-list-txt {
-     font-weight: 300;
+ .banner-catalog-filter-wrp {
+     display: flex;
+     flex-direction: row;
+     margin-bottom: 65px;
+     justify-content: space-evenly;
+ }
+ 
+ .banner-catalog-filter {}
+ 
+ .banner-catalog-filter-txt {
      font-size: 14px;
      line-height: 17px;
-     color: #636363;
+     text-align: left;
+     font-weight: 600;
+     color: $black;
+     text-transform: uppercase;
+     padding-right: 11px;
  }
  
- .banner-small-categories-list-txt span {
-     color: $pink;
+ .banner-catalog-filter-sort {
+     text-decoration: none;
+     text-transform: uppercase;
+     padding-right: 300px;
+ }
+ 
+ .banner-catalog-filter-sort a {
+     color: $grey-filter;
+ }
+ 
+ .banner-catalog-filter-sort-txt {
+     padding-right: 28px;
+ }
+ 
+ .banner-catalog-filter-sort-txt-arrow {
+     padding-left: 10px;
+ }
+ 
+ .pagination {
+     display: inline-block;
+     text-align: center;
+     border: 1px solid $lightgrey-border;
+     padding: 8px 0px;
+     margin: 0 auto;
+ }
+ 
+ .pagination a {
+     color: $lightgrey-border;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:nth-child(1) {
+     color: $black;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:hover:nth-child(2) {
+     color: $brightpink;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:hover:nth-child(3) {
+     color: $brightpink;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:hover:nth-child(4) {
+     color: $brightpink;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:hover:nth-child(5) {
+     color: $brightpink;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:hover:nth-child(6) {
+     color: $brightpink;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:hover:nth-child(7) {
+     color: $brightpink;
+     padding: 8px 12px;
+     text-decoration: none;
+ }
+ 
+ .pagination a:nth-child(8) {
+     color: $black;
+     padding: 8px 12px;
+     text-decoration: none;
  }
