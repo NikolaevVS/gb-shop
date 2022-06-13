@@ -2010,4 +2010,187 @@ ul.breadcrumb li a:hover {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
+
+.page-registration-block {
+  margin: 64px auto 96px auto;
+}
+
+.page-registration-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-inline: 430px;
+}
+
+.page-registration-form-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 128px 0 0;
+  max-width: 360px;
+  width: 100%;
+}
+
+.page-registration-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page-registration-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 33px 0;
+}
+
+.page-registration-form-title {
+  padding: 0 0 20px 0;
+  color: #222222;
+}
+
+.page-registration-data-input {
+  padding: 14px 17px;
+  border: 1px solid #B1B1B1;
+  width: 100%;
+}
+
+.page-registration-data-input:nth-child(2) {
+  margin: 0 0 20px 0;
+}
+
+.page-registration-data-input:nth-child(3) {
+  margin: 0 0 31px 0;
+}
+
+.page-registration-details-input {
+  padding: 14px 17px;
+  border: 1px solid #B1B1B1;
+  width: 100%;
+}
+
+.page-registration-details-input:nth-child(2) {
+  margin: 0 0 20px 0;
+}
+
+.page-registration-details-input:nth-child(3) {
+  margin: 0 0 15px 0;
+}
+
+.page-registration-form-tip {
+  width: 100%;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  margin: 0 0 39px 0;
+}
+
+.page-registration-btn {
+  max-width: 167px;
+  width: 100%;
+  background: #F16D7F;
+  color: #fff;
+  border: none;
+  padding: 16px 29px;
+}
+
+.page-registration-btn span {
+  text-transform: uppercase;
+  padding: 0 20px 0 0;
+}
+
+.page-registration-btn:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.page-registration-btn svg {
+  fill: #fff;
+}
+
+.page-registration-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000;
+  vertical-align: middle;
+}
+
+.container-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container-checkbox:nth-child(1) {
+  margin: 0 20px 0 0;
+}
+
+.container-checkbox input {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  margin: 0 10px 0 0;
+}
+
+.page-registration-info {
+  max-width: 652px;
+  width: 100%;
+}
+
+.page-registration-info ul > li {
+  list-style-image: url(../assets/img/marks.svg);
+  padding: 0 0 16px 0;
+  margin: 0 0 0 26px;
+}
+
+.page-registration-info-txt {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000;
+}
+
+.page-registration-info-txt:nth-child(1) {
+  text-transform: uppercase;
+  padding: 0 0 22px 0;
+}
+
+.page-registration-info-txt:nth-child(2) {
+  padding: 0 0 21px 0;
+}
 /*# sourceMappingURL=styles.css.map */
