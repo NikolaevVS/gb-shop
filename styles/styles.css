@@ -1177,7 +1177,7 @@ ul.breadcrumb li a:hover {
   background-color: #F7F7F7; }
 
 .product-page-img-centered {
-  background: url("/assets/img/womanchair.png") no-repeat;
+  background: url("../assets/img/womanchair.png") no-repeat;
   height: 777px;
   background-position: center; }
 
@@ -1222,7 +1222,8 @@ ul.breadcrumb li a:hover {
   position: relative;
   right: 10px;
   left: 17px;
-  top: 14px; }
+  top: 14px;
+  cursor: pointer; }
 
 .product-page-right-arrow {
   position: absolute;
@@ -1663,4 +1664,18 @@ ul.breadcrumb li a:hover {
 .page-registration-info-txt:nth-child(2) {
   padding: 0 0 21px 0; }
 
-/*# sourceMappingURL=styles.css.map */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner {
+    min-height: 368px; }
+
+  .banner-wrp {
+    background-position: bottom left; }
+
+  .banner-title {
+    margin: 0;
+    font-size: 44px;
+    line-height: 53px; }
+
+  .banner-subtitle {
+    font-size: 24px;
+    line-height: 29px; } }
